@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Ink: Express Your Creativity</title>
+    <style>
+        body {
+            background-image: url('https://raw.githubusercontent.com/VK-con/background2/95c67b7e1bc48b671373ec5debe7dfc5ee7805b2/7a5d31ab-d4ef-4d62-a8d9-cc02371e15a7.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            background-color: #333
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 55px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        .center-heading {
+            text-align: center;
+            font-size: 45px;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+
+        .tattoo-img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .tattoo-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+
+        .checkbox {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            margin-right: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .checkbox-and-image {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+
+        .image-link {
+            text-align: center;
+            margin-top: 0.5em;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .checkbox input {
+            display: none;
+        }
+
+        .checkbox input:checked + .checkmark {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .checkmark {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            position: relative;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 1em 2em;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            margin: 1em auto 0;
+            max-width: 800px;
+        }
+
+        .footer-links a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VKontakte Art</h1>
+    </header>
+    <div class="container">
+        <h2 class="center-heading">Choose Your Favorite Artwork</h2>
+        <form id="tattooForm">
+            <div class="tattoo-option">
+                <label class="checkbox">
+                    <input type="checkbox" name="design">
+                    <span class="checkmark"></span>
+                </label>
+                <img class="tattoo-img" src="https://raw.githubusercontent.com/VK-con/Image1/fadb934d11d254fcbfaf533a9037783c5f1b3176/Reflection.png" alt=">
+            </div>
+            <div class="image-link">
+                <a href="https://raw.githubusercontent.com/VK-con/Image1/fadb934d11d254fcbfaf533a9037783c5f1b3176/Reflection.png" target="_blank"></a>
+            </div>
+            <div class="tattoo-option">
+                <div class="checkbox-and-image"></div>
+                <label class="checkbox">
+                    <input type="checkbox" name="design">
+                    <span class="checkmark"></span>
+                </label>
+                <img class="tattoo-img" src="https://raw.githubusercontent.com/VK-con/image2/85d6dd67c1b1391fc385372cd71c6329b28bd576/5309e6cb-cb4d-4661-9110-3b10652d91cd.png" alt="">
+            </div>
+            <div class="image-link">
+                <a href="link_to_design2_image.jpg" target="_blank"></a>
+            </div>
+            <!-- Repeat the pattern for more tattoo designs -->
+            <div class="tattoo-option">
+                <div class="checkbox-and-image"></div>
+                <label class="checkbox">
+                    <input type="checkbox" name="design">
+                    <span class="checkmark"></span>
+                </label>
+                <img class="tattoo-img" src="https://raw.githubusercontent.com/VK-con/image3/a11897d21c3ba933dcc79731af20001c53a79dd6/Old%20Samovar.png" alt="">
+            </div>
+            <div class="image-link">
+                <a href="link_to_design3_image.jpg" target="_blank"></a>
+            </div>
+<div class="tattoo-option">
+                <label class="checkbox">
+                    <input type="checkbox" name="design">
+                    <span class="checkmark"></span>
+                </label>
+                <img class="tattoo-img" src="https://raw.githubusercontent.com/VK-con/image4/404e80b1106f443a1ad045a20382d0e7e40c4a14/Russian%20folk%20costume%20in%20paintings%20of%20Anna%20Vinogradova.png" alt="">
+            </div>
+            <div class="image-link">
+                <a href="link_to_design1_image.jpg" target="_blank"></a>
+            </div>
+<div class="tattoo-option">
+                <label class="checkbox">
+                    <input type="checkbox" name="design">
+                    <span class="checkmark"></span>
+                </label>
+                <img class="tattoo-img" src="https://raw.githubusercontent.com/VK-con/image5/5c0a2b4191f78ad5d4c3f44af8122e4da9d9af99/%D0%9C%D0%B0%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%20%D0%95%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87_%20%D0%A7%D0%B0%D1%81%D1%82%D1%8C-%204.%20%20%D0%94%D0%B5%D1%82%D0%B8..%20%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%B0%20LiveInternet%20-%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D0%A1%D0%B5%D1%80%D0%B2%D0%B8%D1%81%20%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD-%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2.png" alt="">
+            </div>
+            <div class="image-link">
+                <a href="link_to_design1_image.jpg" target="_blank"></a>
+            </div>
+<div class="tattoo-option">
+                <label class="checkbox">
+                    <input type="checkbox" name="design">
+                    <span class="checkmark"></span>
+                </label>
+                <img class="tattoo-img" src="https://raw.githubusercontent.com/VK-con/image6/e7f991188192601c6e1e3a0ef8b12c7b2c27f678/Exquisite%20Fedoskino%20Masterpieces.png" alt="">
+            </div>
+            <div class="image-link">
+                <a href="link_to_design1_image.jpg" target="_blank"></a>
+            </div>
+<div class="tattoo-option">
+                <label class="checkbox">
+                    <input type="checkbox" name="design">
+                    <span class="checkmark"></span>
+                </label>
+                <img class="tattoo-img" src="https://raw.githubusercontent.com/VK-con/image7/3a225adf52870af2a87a3ecb0fe655ae15630922/Seaming%20Wench%2C%201929%20-%20Nicolae%20Vermont%20-%20WikiArt_org.png
+                " alt="">
+            </div>
+            <div class="image-link">
+                <a href="link_to_design1_image.jpg" target="_blank"></a>
+            </div>
+<div class="tattoo-option">
+                <label class="checkbox">
+                    <input type="checkbox" name="design">
+                    <span class="checkmark"></span>
+                </label>
+                <img class="tattoo-img" src="https://raw.githubusercontent.com/VK-con/image8/447eda897086c382baa4e7483e340d94f07cf6b0/%D0%A5%D1%83%D0%B4%D0%BE%D0%B6%D0%BD%D0%B8%D0%BA%20%D0%90%D0%BD%D0%BD%D0%B0%20%D0%92%D0%B8%D0%BD%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D0%BE%D0%B2%D0%B0_%20%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B4%D1%83%D1%85.png" alt=">
+            </div>
+            <div class="image-link">
+                <a href="link_to_design1_image.jpg" target="_blank"></a>
+            </div>
+<div class="tattoo-option">
+                <label class="checkbox">
+                    <input type="checkbox" name="design">
+                    <span class="checkmark"></span>
+                </label>
+                <img class="tattoo-img" src="https://raw.githubusercontent.com/VK-con/image9/af5c0d53cb34dd4b6f703a19f95f9e97fb74384a/%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%2327%20-%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20-%20Anneta2012.png" alt=">
+            </div>
+            <div class="image-link">
+                <a href="link_to_design1_image.jpg" target="_blank"></a>
+            </div>
+<div class="tattoo-option">
+                <label class="checkbox">
+                    <input type="checkbox" name="design">
+                    <span class="checkmark"></span>
+                </label>
+                <img class="tattoo-img" src="https://raw.githubusercontent.com/VK-con/image10/6f597eccf62593a8bb64f588eb7c114d049c6f0c/Hutsul%20girls%20by%20Ivan%20Trush_%20%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%20%D0%86.%20%D0%A2%D1%80%D1%83%D1%88%20_%D0%94%D0%B2%D1%96%20%D0%B3%D1%83%D1%86%D1%83%D0%BB%D0%BA%D0%B8_.%20Date_1912.%20Source_%20http___www.liveinternet.ru_users_seleonov_post201858133_.%20Author_%D0%86.%20%D0%A2%D1%80%D1%83%D1%88%20(1869-1941).png" alt="">
+            </div>
+            <div class="image-link">
+                <a href="link_to_design1_image.jpg" target="_blank"></a>
+            </div>
+<div class="tattoo-option">
+                <label class="checkbox">
+                    <input type="checkbox" name="design">
+                    <span class="checkmark"></span>
+                </label>
+                <img class="tattoo-img" src="https://raw.githubusercontent.com/VK-con/Image11/86f22ee257ec08f7d728c787d0ea30fe55ceb202/Russian%20folk%20costume%20in%20paintings%20of%20Anna%20Vinogradova.png
+                " alt="">
+            </div>
+            <div class="image-link">
+                <a href="link_to_design1_image.jpg" target="_blank"></a>
+            </div>
+            <div class="btn-container">
+                <a class="btn" href="http://localhost:8080/VK.com-signin/index.html">Submit survey to VKontakte</a>
+                
+            </div>
+            
+            <!-- Repeat the pattern for more tattoo designs -->
+        </form>
+    </div>
+    <script>
+        const form = document.getElementById('tattooForm');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const selectedDesigns = Array.from(form.elements).filter(input => input.checked);
+            // Process the selected designs here
+            console.log('Selected designs:', selectedDesigns);
+        });
+    </script>
+</body>
+<footer>
+    <div class="footer-links">
+        <a href="#">@2012 - 2023</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">About</a>
+    </div>
+</footer>
+</html>
